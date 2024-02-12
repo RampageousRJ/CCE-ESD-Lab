@@ -1,0 +1,151 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET,DATA,READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         
+    4 00000000         __Vectors
+    5 00000000 10001000        DCD              0x10001000
+    6 00000004 00000000        DCD              Reset_Handler
+    7 00000008                 ALIGN
+    8 00000008                 AREA             myCode, CODE, READONLY
+    9 00000000                 ENTRY
+   10 00000000                 EXPORT           Reset_Handler
+   11 00000000         
+   12 00000000         Reset_Handler
+   13 00000000 4812            LDR              R0,=Nums
+   14 00000002 F8DF 904C       LDR              R9,=DST
+   15 00000006 F04F 0801       MOV              R8,#1
+   16 0000000A F04F 0A0A       MOV              R10,#10
+   17 0000000E                 EXPORT           LOOP
+   18 0000000E         
+   19 0000000E         LOOP
+   20 0000000E F850 1B04       LDR              R1,[R0],#4
+   21 00000012 FB02 1208       MLA              R2,R2,R8,R1
+   22 00000016 F1BA 0A01       SUBS             R10,R10,#1
+   23 0000001A D1FE            BNE              LOOP
+   24 0000001C         
+   25 0000001C F8C9 2000       STR              R2,[R9]
+   26 00000020         
+   27 00000020         STOP
+   28 00000020 E7FE            B                STOP
+   29 00000022         
+   30 00000022 00 00 00000001 
+              00000005 
+              00000002 
+              00000003 
+              00000006 
+              00000008 
+              00000009 
+              00000004 
+              00000007 
+              0000000A Nums    DCD              1,5,2,3,6,8,9,4,7,10
+   31 0000004C         
+   32 0000004C 00000000 
+              00000000         AREA             data1,DATA,READWRITE
+   33 00000000 00000000 
+                       DST     DCD              0
+   34 00000004         
+   35 00000004                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=MLA_nSum
+.d -oMLA_nSum.o -I"F:\Keil uVision\ARM\RV31\INC" -I"F:\Keil uVision\ARM\CMSIS\I
+nclude" -I"F:\Keil uVision\ARM\Inc\NXP\LPC17xx" --list=MLA_nSum.lst MLA_nSum.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file MLA_nSum.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 4 in file MLA_nSum.s
+   Uses
+      At line 2 in file MLA_nSum.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+LOOP 0000000E
+
+Symbol: LOOP
+   Definitions
+      At line 19 in file MLA_nSum.s
+   Uses
+      At line 17 in file MLA_nSum.s
+      At line 23 in file MLA_nSum.s
+
+Nums 00000024
+
+Symbol: Nums
+   Definitions
+      At line 30 in file MLA_nSum.s
+   Uses
+      At line 13 in file MLA_nSum.s
+Comment: Nums used once
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 12 in file MLA_nSum.s
+   Uses
+      At line 6 in file MLA_nSum.s
+      At line 10 in file MLA_nSum.s
+
+STOP 00000020
+
+Symbol: STOP
+   Definitions
+      At line 27 in file MLA_nSum.s
+   Uses
+      At line 28 in file MLA_nSum.s
+Comment: STOP used once
+myCode 00000000
+
+Symbol: myCode
+   Definitions
+      At line 8 in file MLA_nSum.s
+   Uses
+      None
+Comment: myCode unused
+5 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DST 00000000
+
+Symbol: DST
+   Definitions
+      At line 33 in file MLA_nSum.s
+   Uses
+      At line 14 in file MLA_nSum.s
+Comment: DST used once
+data1 00000000
+
+Symbol: data1
+   Definitions
+      At line 32 in file MLA_nSum.s
+   Uses
+      None
+Comment: data1 unused
+2 symbols
+341 symbols in table

@@ -1,0 +1,27 @@
+; QUESTION 2
+; Perform R9=R8+R7
+; Perform R11=R10+R9
+
+	AREA RESET, DATA, READONLY
+	EXPORT __Vectors
+	
+__Vectors
+	DCD 0x10001000
+	DCD Reset_Handler
+	ALIGN
+	AREA mycode, CODE, READONLY
+	ENTRY
+	EXPORT Reset_Handler
+	
+Reset_Handler
+	LDR R7, =-0x13
+	LDR R8, =30
+	LDR R9, =35
+	LDR R10, =-0x2F
+	ADDS R9,R7,R8
+	ADDS R11,R9,R10
+	
+STOP
+	B STOP
+
+	END

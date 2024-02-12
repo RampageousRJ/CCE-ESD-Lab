@@ -1,0 +1,131 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET,CODE,READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         __Vectors
+    4 00000000 10001000        DCD              0x10001000
+    5 00000004 00000000        DCD              Reset_Handler
+    6 00000008                 ALIGN
+    7 00000008                 AREA             myCode,CODE,READONLY
+    8 00000000                 ENTRY
+    9 00000000                 EXPORT           Reset_Handler
+   10 00000000         Reset_Handler
+   11 00000000 4806            ldr              r0,=src
+   12 00000002 4907            ldr              r1,=dst
+   13 00000004 6802            ldr              r2,[r0]
+   14 00000006 2A09            cmp              r2,#09
+   15 00000008 DD01            ble              next
+   16 0000000A F102 0207       add              r2,#7
+   17 0000000E F102 021E 
+                       next    add              r2,#30
+   18 00000012 600A            str              r2,[r1]
+   19 00000014 E7FE    stop    b                stop
+   20 00000016 00 00 00000021 
+                       src     dcd              0x21
+   21 0000001C 00000000 
+              00000000         AREA             dataseg,DATA,READWRITE
+   22 00000000 00000000 
+                       dst     dcd              0x0
+   23 00000004                 end
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=q1.d -oq
+1.o -I"F:\Keil uVision\ARM\RV31\INC" -I"F:\Keil uVision\ARM\CMSIS\Include" -I"F
+:\Keil uVision\ARM\Inc\NXP\LPC17xx" --list=.\q1.lst OneDrive_1_2-12-2024\q1.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file OneDrive_1_2-12-2024\q1.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 3 in file OneDrive_1_2-12-2024\q1.s
+   Uses
+      At line 2 in file OneDrive_1_2-12-2024\q1.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 10 in file OneDrive_1_2-12-2024\q1.s
+   Uses
+      At line 5 in file OneDrive_1_2-12-2024\q1.s
+      At line 9 in file OneDrive_1_2-12-2024\q1.s
+
+myCode 00000000
+
+Symbol: myCode
+   Definitions
+      At line 7 in file OneDrive_1_2-12-2024\q1.s
+   Uses
+      None
+Comment: myCode unused
+next 0000000E
+
+Symbol: next
+   Definitions
+      At line 17 in file OneDrive_1_2-12-2024\q1.s
+   Uses
+      At line 15 in file OneDrive_1_2-12-2024\q1.s
+Comment: next used once
+src 00000018
+
+Symbol: src
+   Definitions
+      At line 20 in file OneDrive_1_2-12-2024\q1.s
+   Uses
+      At line 11 in file OneDrive_1_2-12-2024\q1.s
+Comment: src used once
+stop 00000014
+
+Symbol: stop
+   Definitions
+      At line 19 in file OneDrive_1_2-12-2024\q1.s
+   Uses
+      At line 19 in file OneDrive_1_2-12-2024\q1.s
+Comment: stop used once
+5 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+dataseg 00000000
+
+Symbol: dataseg
+   Definitions
+      At line 21 in file OneDrive_1_2-12-2024\q1.s
+   Uses
+      None
+Comment: dataseg unused
+dst 00000000
+
+Symbol: dst
+   Definitions
+      At line 22 in file OneDrive_1_2-12-2024\q1.s
+   Uses
+      At line 12 in file OneDrive_1_2-12-2024\q1.s
+Comment: dst used once
+2 symbols
+341 symbols in table

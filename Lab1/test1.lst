@@ -1,0 +1,96 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET, DATA, READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         
+    4 00000000         __Vectors
+    5 00000000 10001000        DCD              0x10001000
+    6 00000004 00000000        DCD              Reset_Handler
+    7 00000008                 ALIGN
+    8 00000008                 AREA             mycode1, CODE, READONLY
+    9 00000000                 ENTRY
+   10 00000000                 EXPORT           Reset_Handler
+   11 00000000         
+   12 00000000         Reset_Handler
+   13 00000000 F04F 000E       MOV              R0, #14
+   14 00000004 F04F 0110       MOV              R1, #0x10
+   15 00000008 F06F 020E       MOV              R2, #-15
+   16 0000000C 4C00            LDR              R4, Num1
+   17 0000000E         
+   18 0000000E         STOP
+   19 0000000E E7FE            B                STOP
+   20 00000010         
+   21 00000010 10001001 
+                       Num1    DCD              0x10001001
+   22 00000014                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=test1.d 
+-otest1.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\Inc\
+NXP\LPC17xx --predefine="__EVAL SETA 1" --list=test1.lst test1.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file test1.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 4 in file test1.s
+   Uses
+      At line 2 in file test1.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Num1 00000010
+
+Symbol: Num1
+   Definitions
+      At line 21 in file test1.s
+   Uses
+      At line 16 in file test1.s
+Comment: Num1 used once
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 12 in file test1.s
+   Uses
+      At line 6 in file test1.s
+      At line 10 in file test1.s
+
+STOP 0000000E
+
+Symbol: STOP
+   Definitions
+      At line 18 in file test1.s
+   Uses
+      At line 19 in file test1.s
+Comment: STOP used once
+mycode1 00000000
+
+Symbol: mycode1
+   Definitions
+      At line 8 in file test1.s
+   Uses
+      None
+Comment: mycode1 unused
+4 symbols
+337 symbols in table

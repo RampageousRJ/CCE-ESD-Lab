@@ -1,0 +1,186 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET,DATA,READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         
+    4 00000000         __Vectors
+    5 00000000 10001000        DCD              0x10001000
+    6 00000004 00000000        DCD              Reset_Handler
+    7 00000008                 ALIGN
+    8 00000008                 AREA             myCode, CODE, READONLY
+    9 00000000                 ENTRY
+   10 00000000                 EXPORT           Reset_Handler
+   11 00000000         
+   12 00000000         Reset_Handler
+   13 00000000 F04F 000A       MOV              R0,#10
+   14 00000004 4915            LDR              R1,=Num1
+   15 00000006 680A            LDR              R2,[R1]
+   16 00000008 4915            LDR              R1,=DST
+   17 0000000A 4B16            LDR              R3,=SRC
+   18 0000000C         
+   19 0000000C         LOOP
+   20 0000000C F853 4B04       LDR              R4,[R3],#4
+   21 00000010 4294            CMP              R4,R2
+   22 00000012 D007            BEQ              FOUND
+   23 00000014 F1A0 0001       SUB              R0,R0,#1
+   24 00000018 2800            CMP              R0,#0
+   25 0000001A D1F7            BNE              LOOP
+   26 0000001C F04F 34FF       MOV              R4,#-1
+   27 00000020 600C            STR              R4,[R1]
+   28 00000022 E004            B                STOP
+   29 00000024         
+   30 00000024         FOUND
+   31 00000024 F04F 020A       MOV              R2,#10
+   32 00000028 EBA2 0000       SUB              R0,R2,R0
+   33 0000002C 6008            STR              R0,[R1]
+   34 0000002E         
+   35 0000002E         STOP
+   36 0000002E E7FE            B                STOP
+   37 00000030         
+   38 00000030 00000017 
+                       Num1    DCD              23
+   39 00000034 000000FF 
+              0000002A 
+              00000017 
+              0000000B 
+              00000051 
+              00000013 
+              00000064 
+              00000002 
+              0000004E 
+              0000002C SRC     DCD              255,42,23,11,81,19,100,2,78,44
+   40 0000005C         
+   41 0000005C 00000000 
+              00000000 
+              00000000         AREA             data1,DATA,READWRITE
+   42 00000000 00000000 
+                       DST     DCD              0
+   43 00000004         
+   44 00000004         
+   45 00000004                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=linear_s
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+earch.d -olinear_search.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include -I
+C:\Keil\ARM\Inc\NXP\LPC17xx --predefine="__EVAL SETA 1" --list=linear_search.ls
+t linear_search.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file linear_search.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 4 in file linear_search.s
+   Uses
+      At line 2 in file linear_search.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+FOUND 00000024
+
+Symbol: FOUND
+   Definitions
+      At line 30 in file linear_search.s
+   Uses
+      At line 22 in file linear_search.s
+Comment: FOUND used once
+LOOP 0000000C
+
+Symbol: LOOP
+   Definitions
+      At line 19 in file linear_search.s
+   Uses
+      At line 25 in file linear_search.s
+Comment: LOOP used once
+Num1 00000030
+
+Symbol: Num1
+   Definitions
+      At line 38 in file linear_search.s
+   Uses
+      At line 14 in file linear_search.s
+Comment: Num1 used once
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 12 in file linear_search.s
+   Uses
+      At line 6 in file linear_search.s
+      At line 10 in file linear_search.s
+
+SRC 00000034
+
+Symbol: SRC
+   Definitions
+      At line 39 in file linear_search.s
+   Uses
+      At line 17 in file linear_search.s
+Comment: SRC used once
+STOP 0000002E
+
+Symbol: STOP
+   Definitions
+      At line 35 in file linear_search.s
+   Uses
+      At line 28 in file linear_search.s
+      At line 36 in file linear_search.s
+
+myCode 00000000
+
+Symbol: myCode
+   Definitions
+      At line 8 in file linear_search.s
+   Uses
+      None
+Comment: myCode unused
+7 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DST 00000000
+
+Symbol: DST
+   Definitions
+      At line 42 in file linear_search.s
+   Uses
+      At line 16 in file linear_search.s
+Comment: DST used once
+data1 00000000
+
+Symbol: data1
+   Definitions
+      At line 41 in file linear_search.s
+   Uses
+      None
+Comment: data1 unused
+2 symbols
+344 symbols in table

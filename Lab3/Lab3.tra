@@ -1,0 +1,20 @@
+*** Creating Trace Output File 'Lab3.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"hexadecimal_to_bcd.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 "hexadecimal_to_bcd.o" 
+--strict --scatter "Lab3.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lab3.map" -o Lab3.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'Lab3.axf'
+### ADS-LD Command File: 'Lab3.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'Lab3.lnp', Handle=0x00008798
+### Writing '.lnp' file
+### ADS-LD Command file 'Lab3.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

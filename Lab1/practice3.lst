@@ -1,0 +1,131 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ; QUESTION 2
+    2 00000000         ; Perform R9=R8+R7
+    3 00000000         ; Perform R11=R10+R9
+    4 00000000         
+    5 00000000                 AREA             RESET, DATA, READONLY
+    6 00000000                 EXPORT           __Vectors
+    7 00000000         
+    8 00000000         __Vectors
+    9 00000000 10001000        DCD              0x10001000
+   10 00000004 00000000        DCD              Reset_Handler
+   11 00000008                 ALIGN
+   12 00000008                 AREA             mycode, CODE, READONLY
+   13 00000000                 ENTRY
+   14 00000000                 EXPORT           Reset_Handler
+   15 00000000         
+   16 00000000         Reset_Handler
+   17 00000000 4804            LDR              R0, =SRC
+   18 00000002 4905            LDR              R1, =DST
+   19 00000004 6802            LDR              R2, [R0]
+   20 00000006 600A            STR              R2, [R1]
+   21 00000008         
+   22 00000008         STOP
+   23 00000008 E7FE            B                STOP
+   24 0000000A         
+   25 0000000A 00 00 00000008 
+              00123456 SRC     DCD              8,0x123456
+   26 00000014         
+   27 00000014 00000000 
+              00000000         AREA             DATASEG, DATA, READWRITE
+   28 00000000         
+   29 00000000 00000000 
+                       DST     DCD              0
+   30 00000004         
+   31 00000004                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=practice
+3.d -opractice3.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\
+ARM\Inc\NXP\LPC17xx --predefine="__EVAL SETA 1" --list=practice3.lst practice3.
+s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 5 in file practice3.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 8 in file practice3.s
+   Uses
+      At line 6 in file practice3.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 16 in file practice3.s
+   Uses
+      At line 10 in file practice3.s
+      At line 14 in file practice3.s
+
+SRC 0000000C
+
+Symbol: SRC
+   Definitions
+      At line 25 in file practice3.s
+   Uses
+      At line 17 in file practice3.s
+Comment: SRC used once
+STOP 00000008
+
+Symbol: STOP
+   Definitions
+      At line 22 in file practice3.s
+   Uses
+      At line 23 in file practice3.s
+Comment: STOP used once
+mycode 00000000
+
+Symbol: mycode
+   Definitions
+      At line 12 in file practice3.s
+   Uses
+      None
+Comment: mycode unused
+4 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DATASEG 00000000
+
+Symbol: DATASEG
+   Definitions
+      At line 27 in file practice3.s
+   Uses
+      None
+Comment: DATASEG unused
+DST 00000000
+
+Symbol: DST
+   Definitions
+      At line 29 in file practice3.s
+   Uses
+      At line 18 in file practice3.s
+Comment: DST used once
+2 symbols
+341 symbols in table

@@ -1,0 +1,20 @@
+*** Creating Trace Output File 'ReverseArray.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"reverse_array.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 "reverse_array.o" 
+--strict --scatter "ReverseArray.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\ReverseArray.map" -o ReverseArray.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'ReverseArray.axf'
+### ADS-LD Command File: 'ReverseArray.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'ReverseArray.lnp', Handle=0x0000A334
+### Writing '.lnp' file
+### ADS-LD Command file 'ReverseArray.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

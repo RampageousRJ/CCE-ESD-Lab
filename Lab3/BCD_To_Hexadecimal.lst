@@ -1,0 +1,156 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET,DATA,READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         
+    4 00000000         __Vectors
+    5 00000000 10001000        DCD              0x10001000
+    6 00000004 00000000        DCD              Reset_Handler
+    7 00000008                 ALIGN
+    8 00000008                 AREA             myCode, CODE, READONLY
+    9 00000000                 ENTRY
+   10 00000000                 EXPORT           Reset_Handler
+   11 00000000         
+   12 00000000         Reset_Handler
+   13 00000000 4908            LDR              R1,=Num1
+   14 00000002 4A09            LDR              R2,=DST
+   15 00000004 680B            LDR              R3,[R1]
+   16 00000006 2B40            CMP              R3,#0x40
+   17 00000008 DB00            BLT              Lesser
+   18 0000000A E003            B                Greater
+   19 0000000C         
+   20 0000000C         Lesser
+   21 0000000C F1A3 0330       SUB              R3,R3,#0x30
+   22 00000010 6013            STR              R3,[R2]
+   23 00000012 E003            B                STOP
+   24 00000014         
+   25 00000014         Greater
+   26 00000014 F1A3 0337       SUB              R3,R3,#0x37
+   27 00000018 6013            STR              R3,[R2]
+   28 0000001A E7FF            B                STOP
+   29 0000001C         
+   30 0000001C         STOP
+   31 0000001C E7FE            B                STOP
+   32 0000001E         
+   33 0000001E 00 00 00000033 
+                       Num1    DCD              0x33
+   34 00000024         
+   35 00000024 00000000 
+              00000000         AREA             data1,DATA,READWRITE
+   36 00000000 00000000 
+                       DST     DCD              0
+   37 00000004         
+   38 00000004                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=BCD_To_H
+exadecimal.d -oBCD_To_Hexadecimal.o -I"F:\Keil uVision\ARM\RV31\INC" -I"F:\Keil
+ uVision\ARM\CMSIS\Include" -I"F:\Keil uVision\ARM\Inc\NXP\LPC17xx" --list=BCD_
+To_Hexadecimal.lst BCD_To_Hexadecimal.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file BCD_To_Hexadecimal.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 4 in file BCD_To_Hexadecimal.s
+   Uses
+      At line 2 in file BCD_To_Hexadecimal.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Greater 00000014
+
+Symbol: Greater
+   Definitions
+      At line 25 in file BCD_To_Hexadecimal.s
+   Uses
+      At line 18 in file BCD_To_Hexadecimal.s
+Comment: Greater used once
+Lesser 0000000C
+
+Symbol: Lesser
+   Definitions
+      At line 20 in file BCD_To_Hexadecimal.s
+   Uses
+      At line 17 in file BCD_To_Hexadecimal.s
+Comment: Lesser used once
+Num1 00000020
+
+Symbol: Num1
+   Definitions
+      At line 33 in file BCD_To_Hexadecimal.s
+   Uses
+      At line 13 in file BCD_To_Hexadecimal.s
+Comment: Num1 used once
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 12 in file BCD_To_Hexadecimal.s
+   Uses
+      At line 6 in file BCD_To_Hexadecimal.s
+      At line 10 in file BCD_To_Hexadecimal.s
+
+STOP 0000001C
+
+Symbol: STOP
+   Definitions
+      At line 30 in file BCD_To_Hexadecimal.s
+   Uses
+      At line 23 in file BCD_To_Hexadecimal.s
+      At line 28 in file BCD_To_Hexadecimal.s
+      At line 31 in file BCD_To_Hexadecimal.s
+
+myCode 00000000
+
+Symbol: myCode
+   Definitions
+      At line 8 in file BCD_To_Hexadecimal.s
+   Uses
+      None
+Comment: myCode unused
+6 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DST 00000000
+
+Symbol: DST
+   Definitions
+      At line 36 in file BCD_To_Hexadecimal.s
+   Uses
+      At line 14 in file BCD_To_Hexadecimal.s
+Comment: DST used once
+data1 00000000
+
+Symbol: data1
+   Definitions
+      At line 35 in file BCD_To_Hexadecimal.s
+   Uses
+      None
+Comment: data1 unused
+2 symbols
+342 symbols in table

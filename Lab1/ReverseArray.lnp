@@ -1,0 +1,5 @@
+--cpu Cortex-M3 "reverse_array.o" 
+--strict --scatter "ReverseArray.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\ReverseArray.map" -o ReverseArray.axf

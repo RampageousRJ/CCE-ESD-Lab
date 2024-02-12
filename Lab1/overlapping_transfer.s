@@ -1,0 +1,33 @@
+	AREA RESET, DATA, READONLY ; overlapping instructions
+	EXPORT __Vectors
+__Vectors
+	DCD 0x10001000
+	DCD Reset_Handler
+	
+	ALIGN
+	
+	AREA mycode, CODE, READONLY
+	EXPORT Reset_Handler
+ENTRY
+
+Reset_Handler
+	LDR R0,=SRC + (N-1)*4
+	LDR R1,=SRC + (N-1+ SHIFT)*4
+	MOV R2,#10
+	LDR R3,=0x00000000
+LOOP
+	LDR R3,[R0],#04
+	STR R3,[R1],#04
+	SUB R2,R2,#1
+	TEQ R2,#0
+	BNE LOOP
+	
+STOP
+	B STOP
+N 	  EQU 10
+SHIFT EQU 2
+SRC DCD 1,2,3,4,5,6,7,8,9,10
+	AREA mydata, DATA, READWRITE
+DST DCD 0,0,0,0,0,0,0,0,0,0
+
+	END
