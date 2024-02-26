@@ -76,6 +76,33 @@
         <IsCurrentTarget>1</IsCurrentTarget>
       </OPTFL>
       <CpuCode>8</CpuCode>
+      <Books>
+        <Book>
+          <Number>0</Number>
+          <Title>Data Sheet</Title>
+          <Path>DATASHTS\PHILIPS\LPC176x_DS.pdf</Path>
+        </Book>
+        <Book>
+          <Number>1</Number>
+          <Title>User Manual</Title>
+          <Path>DATASHTS\PHILIPS\LPC17xx_UM.pdf</Path>
+        </Book>
+        <Book>
+          <Number>2</Number>
+          <Title>Errata Sheet</Title>
+          <Path>DATASHTS\PHILIPS\LPC1768_ES.pdf</Path>
+        </Book>
+        <Book>
+          <Number>3</Number>
+          <Title>Technical Reference Manual</Title>
+          <Path>datashts\arm\cortex_m3\r2p1\DDI0337I_CORTEXM3_R2P1_TRM.PDF</Path>
+        </Book>
+        <Book>
+          <Number>4</Number>
+          <Title>Generic User Guide</Title>
+          <Path>datashts\arm\cortex_m3\r2p1\DUI0552A_CORTEX_M3_DGUG.PDF</Path>
+        </Book>
+      </Books>
       <DllOpt>
         <SimDllName>SARMCM3.DLL</SimDllName>
         <SimDllArguments>-MPU</SimDllArguments>
@@ -130,6 +157,11 @@
           <Key>ARMDBGFLAGS</Key>
           <Name>-T0</Name>
         </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
+          <Key>UL2CM3</Key>
+          <Name>-O463 -S0 -C0 -FO7 -FD10000000 -FC800 -FN1 -FF0LPC_IAP_512 -FS00 -FL080000)</Name>
+        </SetRegEntry>
       </TargetDriverDllRegistry>
       <Breakpoint/>
       <MemoryWindow1>
@@ -141,7 +173,7 @@
       </MemoryWindow1>
       <DebugFlag>
         <trace>0</trace>
-        <periodic>0</periodic>
+        <periodic>1</periodic>
         <aLwin>1</aLwin>
         <aCover>0</aCover>
         <aSer1>0</aSer1>
@@ -162,7 +194,7 @@
         <aSer4>0</aSer4>
         <StkLoc>0</StkLoc>
         <TrcWin>0</TrcWin>
-        <newCpu>0</newCpu>
+        <newCpu>3</newCpu>
         <uProt>0</uProt>
       </DebugFlag>
       <Tracepoint>
@@ -185,13 +217,13 @@
       <FileType>2</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>15</ColumnNumber>
+      <ColumnNumber>16</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>14</CurrentLine>
+      <CurrentLine>43</CurrentLine>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\subtract.s</PathWithFileName>
-      <FilenameWithoutPath>subtract.s</FilenameWithoutPath>
+      <PathWithFileName>.\onecount.s</PathWithFileName>
+      <FilenameWithoutPath>onecount.s</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

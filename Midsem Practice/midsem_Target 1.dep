@@ -1,0 +1,2 @@
+Dependencies for Project 'midsem', Target 'Target 1': (DO NOT MODIFY !)
+F (.\binary_bitwise_palindrome.s)(0x65DC39C5)(--cpu Cortex-M3 -g --apcs=interwork -I "F:\Keil uVision\ARM\RV31\INC" -I "F:\Keil uVision\ARM\CMSIS\Include" -I "F:\Keil uVision\ARM\Inc\NXP\LPC17xx" --list "binary_bitwise_palindrome.lst" --xref -o "binary_bitwise_palindrome.o" --depend "binary_bitwise_palindrome.d")

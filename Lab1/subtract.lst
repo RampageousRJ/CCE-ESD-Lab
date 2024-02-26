@@ -1,0 +1,139 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET,DATA,READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         
+    4 00000000         __Vectors
+    5 00000000 10001000        DCD              0x10001000
+    6 00000004 00000000        DCD              Reset_Handler
+    7 00000008                 ALIGN
+    8 00000008                 AREA             subt,CODE,READONLY
+    9 00000000                 ENTRY
+   10 00000000                 EXPORT           Reset_Handler
+   11 00000000         
+   12 00000000         Reset_Handler
+   13 00000000 4806            LDR              R0,=SRC1
+   14 00000002 6801            LDR              R1,[R0]
+   15 00000004 4806            LDR              R0,=SRC2
+   16 00000006 6802            LDR              R2,[R0]
+   17 00000008 EBA1 0102       SUB              R1,R1,R2
+   18 0000000C 4805            LDR              R0,=DST
+   19 0000000E 6001            STR              R1,[R0]
+   20 00000010         
+   21 00000010         STOP
+   22 00000010 E7FE            B                STOP
+   23 00000012         
+   24 00000012 00 00 10001000 
+                       SRC1    DCD              0x10001000
+   25 00000018 01110111 
+                       SRC2    DCD              0x01110111
+   26 0000001C         
+   27 0000001C 00000000 
+              00000000 
+              00000000         AREA             dseg,DATA,READWRITE
+   28 00000000 00000000 
+                       DST     DCD              0
+   29 00000004         
+   30 00000004                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=subtract
+.d -osubtract.o -I"F:\Keil uVision\ARM\RV31\INC" -I"F:\Keil uVision\ARM\CMSIS\I
+nclude" -I"F:\Keil uVision\ARM\Inc\NXP\LPC17xx" --list=subtract.lst subtract.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file subtract.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 4 in file subtract.s
+   Uses
+      At line 2 in file subtract.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 12 in file subtract.s
+   Uses
+      At line 6 in file subtract.s
+      At line 10 in file subtract.s
+
+SRC1 00000014
+
+Symbol: SRC1
+   Definitions
+      At line 24 in file subtract.s
+   Uses
+      At line 13 in file subtract.s
+Comment: SRC1 used once
+SRC2 00000018
+
+Symbol: SRC2
+   Definitions
+      At line 25 in file subtract.s
+   Uses
+      At line 15 in file subtract.s
+Comment: SRC2 used once
+STOP 00000010
+
+Symbol: STOP
+   Definitions
+      At line 21 in file subtract.s
+   Uses
+      At line 22 in file subtract.s
+Comment: STOP used once
+subt 00000000
+
+Symbol: subt
+   Definitions
+      At line 8 in file subtract.s
+   Uses
+      None
+Comment: subt unused
+5 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DST 00000000
+
+Symbol: DST
+   Definitions
+      At line 28 in file subtract.s
+   Uses
+      At line 18 in file subtract.s
+Comment: DST used once
+dseg 00000000
+
+Symbol: dseg
+   Definitions
+      At line 27 in file subtract.s
+   Uses
+      None
+Comment: dseg unused
+2 symbols
+341 symbols in table

@@ -44,7 +44,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\</OutputDirectory>
-          <OutputName>ReverseArray</OutputName>
+          <OutputName>midsem</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>0</CreateHexFile>
@@ -392,9 +392,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>reverse_array.s</FileName>
+              <FileName>onecount.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\reverse_array.s</FilePath>
+              <FilePath>.\onecount.s</FilePath>
             </File>
           </Files>
         </Group>

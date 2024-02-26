@@ -1,0 +1,128 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET,DATA,READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         
+    4 00000000         __Vectors
+    5 00000000 10001000        DCD              0x10001000
+    6 00000004 00000000        DCD              Reset_Handler
+    7 00000008                 ALIGN
+    8 00000008                 AREA             complement,CODE,READONLY
+    9 00000000                 ENTRY
+   10 00000000                 EXPORT           Reset_Handler
+   11 00000000         
+   12 00000000         Reset_Handler
+   13 00000000 4805            LDR              R0,=SRC
+   14 00000002 6801            LDR              R1,[R0]
+   15 00000004 F081 32FF       EOR              R2,R1,#0xFFFFFFFF
+   16 00000008 F102 0201       ADD              R2,R2,#1
+   17 0000000C 4803            LDR              R0,=DST
+   18 0000000E 6002            STR              R2,[R0]
+   19 00000010         
+   20 00000010         STOP
+   21 00000010 E7FE            B                STOP
+   22 00000012         
+   23 00000012 00 00 11111110 
+                       SRC     DCD              0x11111110
+   24 00000018         
+   25 00000018 00000000 
+              00000000         AREA             dataseg,DATA,READWRITE
+   26 00000000 00000000 
+                       DST     DCD              0
+   27 00000004         
+   28 00000004                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=twos_com
+plement.d -otwos_complement.o -I"F:\Keil uVision\ARM\RV31\INC" -I"F:\Keil uVisi
+on\ARM\CMSIS\Include" -I"F:\Keil uVision\ARM\Inc\NXP\LPC17xx" --list=twos_compl
+ement.lst twos_complement.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file twos_complement.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 4 in file twos_complement.s
+   Uses
+      At line 2 in file twos_complement.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 12 in file twos_complement.s
+   Uses
+      At line 6 in file twos_complement.s
+      At line 10 in file twos_complement.s
+
+SRC 00000014
+
+Symbol: SRC
+   Definitions
+      At line 23 in file twos_complement.s
+   Uses
+      At line 13 in file twos_complement.s
+Comment: SRC used once
+STOP 00000010
+
+Symbol: STOP
+   Definitions
+      At line 20 in file twos_complement.s
+   Uses
+      At line 21 in file twos_complement.s
+Comment: STOP used once
+complement 00000000
+
+Symbol: complement
+   Definitions
+      At line 8 in file twos_complement.s
+   Uses
+      None
+Comment: complement unused
+4 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DST 00000000
+
+Symbol: DST
+   Definitions
+      At line 26 in file twos_complement.s
+   Uses
+      At line 17 in file twos_complement.s
+Comment: DST used once
+dataseg 00000000
+
+Symbol: dataseg
+   Definitions
+      At line 25 in file twos_complement.s
+   Uses
+      None
+Comment: dataseg unused
+2 symbols
+340 symbols in table

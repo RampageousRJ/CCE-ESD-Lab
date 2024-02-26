@@ -392,9 +392,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>reverse_array.s</FileName>
+              <FileName>subtract.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\reverse_array.s</FilePath>
+              <FilePath>.\subtract.s</FilePath>
             </File>
           </Files>
         </Group>

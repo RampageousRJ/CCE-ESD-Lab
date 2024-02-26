@@ -188,10 +188,10 @@
       <ColumnNumber>4</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>17</CurrentLine>
+      <CurrentLine>16</CurrentLine>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\reverse_array.s</PathWithFileName>
-      <FilenameWithoutPath>reverse_array.s</FilenameWithoutPath>
+      <PathWithFileName>.\subtract.s</PathWithFileName>
+      <FilenameWithoutPath>subtract.s</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

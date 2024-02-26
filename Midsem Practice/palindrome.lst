@@ -1,0 +1,202 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET,DATA,READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         
+    4 00000000         __Vectors
+    5 00000000 10001000        DCD              0x10001000
+    6 00000004 00000000        DCD              Reset_Handler
+    7 00000008                 ALIGN
+    8 00000008                 AREA             palindrome,CODE,READONLY
+    9 00000000                 ENTRY
+   10 00000000                 EXPORT           Reset_Handler
+   11 00000000         
+   12 00000000         Reset_Handler
+   13 00000000 4812            LDR              R0,=SRC
+   14 00000002 6801            LDR              R1,[R0]
+   15 00000004 460A            MOV              R2,R1
+   16 00000006 F04F 0C08       MOV              R12,#8
+   17 0000000A F04F 000F       MOV              R0,#0xF
+   18 0000000E F04F 0300       MOV              R3,#0
+   19 00000012         
+   20 00000012         REVERSE
+   21 00000012 EA02 0400       AND              R4,R2,R0
+   22 00000016 EA4F 1212       MOV              R2,R2,LSR #4
+   23 0000001A EA4F 1303       MOV              R3,R3,LSL #4
+   24 0000001E 4423            ADD              R3,R3,R4
+   25 00000020 F1AC 0C01       SUB              R12,R12,#1
+   26 00000024 F1BC 0F00       CMP              R12,#0
+   27 00000028 D1F3            BNE              REVERSE
+   28 0000002A E7FF            B                CHECK
+   29 0000002C         
+   30 0000002C         CHECK
+   31 0000002C 4299            CMP              R1,R3
+   32 0000002E D000            BEQ              EQUAL
+   33 00000030 D104            BNE              NOT_EQUAL
+   34 00000032         
+   35 00000032         EQUAL
+   36 00000032 4907            LDR              R1,=DST
+   37 00000034 F04F 0201       MOV              R2,#1
+   38 00000038 600A            STR              R2,[R1]
+   39 0000003A E003            B                STOP
+   40 0000003C         
+   41 0000003C         NOT_EQUAL
+   42 0000003C 4904            LDR              R1,=DST
+   43 0000003E F04F 32FF       MOV              R2,#-1
+   44 00000042 600A            STR              R2,[R1]
+   45 00000044         
+   46 00000044         
+   47 00000044         STOP
+   48 00000044 E7FE            B                STOP
+   49 00000046         
+   50 00000046 00 00 12300320 
+                       SRC     DCD              0x12300320
+   51 0000004C         
+   52 0000004C 00000000 
+              00000000 
+              00000000         AREA             dataseg,DATA,READWRITE
+   53 00000000 00000000 
+                       DST     DCD              0
+   54 00000004         
+   55 00000004                 END
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=palindro
+me.d -opalindrome.o -I"F:\Keil uVision\ARM\RV31\INC" -I"F:\Keil uVision\ARM\CMS
+IS\Include" -I"F:\Keil uVision\ARM\Inc\NXP\LPC17xx" --list=palindrome.lst palin
+drome.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file palindrome.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 4 in file palindrome.s
+   Uses
+      At line 2 in file palindrome.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+CHECK 0000002C
+
+Symbol: CHECK
+   Definitions
+      At line 30 in file palindrome.s
+   Uses
+      At line 28 in file palindrome.s
+Comment: CHECK used once
+EQUAL 00000032
+
+Symbol: EQUAL
+   Definitions
+      At line 35 in file palindrome.s
+   Uses
+      At line 32 in file palindrome.s
+Comment: EQUAL used once
+NOT_EQUAL 0000003C
+
+Symbol: NOT_EQUAL
+   Definitions
+      At line 41 in file palindrome.s
+   Uses
+      At line 33 in file palindrome.s
+Comment: NOT_EQUAL used once
+REVERSE 00000012
+
+Symbol: REVERSE
+   Definitions
+      At line 20 in file palindrome.s
+   Uses
+      At line 27 in file palindrome.s
+Comment: REVERSE used once
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 12 in file palindrome.s
+   Uses
+      At line 6 in file palindrome.s
+      At line 10 in file palindrome.s
+
+SRC 00000048
+
+Symbol: SRC
+   Definitions
+      At line 50 in file palindrome.s
+   Uses
+      At line 13 in file palindrome.s
+Comment: SRC used once
+STOP 00000044
+
+Symbol: STOP
+   Definitions
+      At line 47 in file palindrome.s
+   Uses
+      At line 39 in file palindrome.s
+      At line 48 in file palindrome.s
+
+palindrome 00000000
+
+
+
+ARM Macro Assembler    Page 2 Alphabetic symbol ordering
+Relocatable symbols
+
+
+Symbol: palindrome
+   Definitions
+      At line 8 in file palindrome.s
+   Uses
+      None
+Comment: palindrome unused
+8 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DST 00000000
+
+Symbol: DST
+   Definitions
+      At line 53 in file palindrome.s
+   Uses
+      At line 36 in file palindrome.s
+      At line 42 in file palindrome.s
+
+dataseg 00000000
+
+Symbol: dataseg
+   Definitions
+      At line 52 in file palindrome.s
+   Uses
+      None
+Comment: dataseg unused
+2 symbols
+344 symbols in table

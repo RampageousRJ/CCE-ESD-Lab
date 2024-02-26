@@ -1,0 +1,1 @@
+onecount.o: onecount.s

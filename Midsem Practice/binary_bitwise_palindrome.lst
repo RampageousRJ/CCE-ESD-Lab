@@ -1,0 +1,293 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET,DATA,READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         
+    4 00000000         __Vectors
+    5 00000000 10001000        DCD              0x10001000
+    6 00000004 00000000        DCD              Reset_Handler
+    7 00000008                 ALIGN
+    8 00000008                 AREA             bitwise_palindrome,CODE,READONL
+Y
+    9 00000000                 ENTRY
+   10 00000000                 EXPORT           Reset_Handler
+   11 00000000         
+   12 00000000         Reset_Handler
+   13 00000000 482B            LDR              R0,=SRC
+   14 00000002 6801            LDR              R1,[R0]
+   15 00000004 F04F 0280       LDR              R2,=0x00000080
+   16 00000008 F04F 0300       LDR              R3,=0
+   17 0000000C F04F 0008       MOV              R0,#8
+   18 00000010 F000 F805       BL               CONVERT
+   19 00000014 F000 F815       BL               PALINDROME
+   20 00000018         
+   21 00000018         EXIT
+   22 00000018 F85D EB04       POP              {R14}
+   23 0000001C 4770            BX               LR
+   24 0000001E         
+   25 0000001E         CONVERT
+   26 0000001E B500            PUSH             {R14}
+   27 00000020 4291            CMP              R1,R2
+   28 00000022 D801            BHI              HIGH
+   29 00000024 D000            BEQ              HIGH
+   30 00000026 D303            BLO              SECOND
+   31 00000028         
+   32 00000028         HIGH
+   33 00000028 F103 0301       ADD              R3,R3,#1
+   34 0000002C EBA1 0102       SUB              R1,R1,R2
+   35 00000030         
+   36 00000030         SECOND
+   37 00000030 F1A0 0001       SUB              R0,R0,#1
+   38 00000034 2800            CMP              R0,#0
+   39 00000036 D0EF            BEQ              EXIT
+   40 00000038 EA4F 1303       MOV              R3,R3,LSL #4
+   41 0000003C EA4F 0252       MOV              R2,R2,LSR #1
+   42 00000040 E7ED            B                CONVERT
+   43 00000042         
+   44 00000042         PALINDROME
+   45 00000042 B500            PUSH             {R14}
+   46 00000044 F04F 0008       MOV              R0,#8
+   47 00000048 461C            MOV              R4,R3
+   48 0000004A F04F 0500       MOV              R5,#0
+   49 0000004E F000 F805       BL               REVERSE
+   50 00000052 F04F 0008       MOV              R0,#8
+   51 00000056 F000 F80E       BL               CHECK
+   52 0000005A E026            B                STOP
+   53 0000005C         
+   54 0000005C         REVERSE
+   55 0000005C B500            PUSH             {R14}
+   56 0000005E F004 060F       AND              R6,R4,#0xF
+   57 00000062 4435            ADD              R5,R5,R6
+   58 00000064 F1A0 0001       SUB              R0,R0,#1
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+   59 00000068 2800            CMP              R0,#0
+   60 0000006A D0D5            BEQ              EXIT
+   61 0000006C EA4F 1505       MOV              R5,R5,LSL #4
+   62 00000070 EA4F 1414       MOV              R4,R4,LSR #4
+   63 00000074 E7F2            B                REVERSE
+   64 00000076         
+   65 00000076         CHECK
+   66 00000076 B500            PUSH             {R14}
+   67 00000078 F003 070F       AND              R7,R3,#0xF
+   68 0000007C F005 080F       AND              R8,R5,#0xF
+   69 00000080 4547            CMP              R7,R8
+   70 00000082 D10D            BNE              NPAL
+   71 00000084 EA4F 1313       MOV              R3,R3,LSR #4
+   72 00000088 EA4F 1515       MOV              R5,R5,LSR #4
+   73 0000008C F1A0 0001       SUB              R0,R0,#1
+   74 00000090 2800            CMP              R0,#0
+   75 00000092 D000            BEQ              SUCCESS
+   76 00000094 E7EF            B                CHECK
+   77 00000096         
+   78 00000096         SUCCESS
+   79 00000096 4807            LDR              R0,=DST
+   80 00000098 F04F 0101       LDR              R1,=0x1
+   81 0000009C 6001            STR              R1,[R0]
+   82 0000009E E7BB            B                EXIT
+   83 000000A0         
+   84 000000A0         NPAL
+   85 000000A0 4804            LDR              R0,=DST
+   86 000000A2 F04F 31FF       LDR              R1,=-1
+   87 000000A6 6001            STR              R1,[R0]
+   88 000000A8 E7B6            B                EXIT
+   89 000000AA         
+   90 000000AA         STOP
+   91 000000AA E7FE            B                STOP
+   92 000000AC         
+   93 000000AC 00000080 
+                       SRC     DCD              128
+   94 000000B0         
+   95 000000B0 00000000 
+              00000000 
+              00000000         AREA             dseg,DATA,READWRITE
+   96 00000000 00000000 
+                       DST     DCD              0
+   97 00000004         
+   98 00000004                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=binary_b
+itwise_palindrome.d -obinary_bitwise_palindrome.o -I"F:\Keil uVision\ARM\RV31\I
+NC" -I"F:\Keil uVision\ARM\CMSIS\Include" -I"F:\Keil uVision\ARM\Inc\NXP\LPC17x
+x" --list=binary_bitwise_palindrome.lst binary_bitwise_palindrome.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file binary_bitwise_palindrome.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 4 in file binary_bitwise_palindrome.s
+   Uses
+      At line 2 in file binary_bitwise_palindrome.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+CHECK 00000076
+
+Symbol: CHECK
+   Definitions
+      At line 65 in file binary_bitwise_palindrome.s
+   Uses
+      At line 51 in file binary_bitwise_palindrome.s
+      At line 76 in file binary_bitwise_palindrome.s
+
+CONVERT 0000001E
+
+Symbol: CONVERT
+   Definitions
+      At line 25 in file binary_bitwise_palindrome.s
+   Uses
+      At line 18 in file binary_bitwise_palindrome.s
+      At line 42 in file binary_bitwise_palindrome.s
+
+EXIT 00000018
+
+Symbol: EXIT
+   Definitions
+      At line 21 in file binary_bitwise_palindrome.s
+   Uses
+      At line 39 in file binary_bitwise_palindrome.s
+      At line 60 in file binary_bitwise_palindrome.s
+      At line 82 in file binary_bitwise_palindrome.s
+      At line 88 in file binary_bitwise_palindrome.s
+
+HIGH 00000028
+
+Symbol: HIGH
+   Definitions
+      At line 32 in file binary_bitwise_palindrome.s
+   Uses
+      At line 28 in file binary_bitwise_palindrome.s
+      At line 29 in file binary_bitwise_palindrome.s
+
+NPAL 000000A0
+
+Symbol: NPAL
+   Definitions
+      At line 84 in file binary_bitwise_palindrome.s
+   Uses
+      At line 70 in file binary_bitwise_palindrome.s
+Comment: NPAL used once
+PALINDROME 00000042
+
+Symbol: PALINDROME
+   Definitions
+      At line 44 in file binary_bitwise_palindrome.s
+   Uses
+      At line 19 in file binary_bitwise_palindrome.s
+Comment: PALINDROME used once
+REVERSE 0000005C
+
+Symbol: REVERSE
+   Definitions
+      At line 54 in file binary_bitwise_palindrome.s
+
+
+
+ARM Macro Assembler    Page 2 Alphabetic symbol ordering
+Relocatable symbols
+
+   Uses
+      At line 49 in file binary_bitwise_palindrome.s
+      At line 63 in file binary_bitwise_palindrome.s
+
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 12 in file binary_bitwise_palindrome.s
+   Uses
+      At line 6 in file binary_bitwise_palindrome.s
+      At line 10 in file binary_bitwise_palindrome.s
+
+SECOND 00000030
+
+Symbol: SECOND
+   Definitions
+      At line 36 in file binary_bitwise_palindrome.s
+   Uses
+      At line 30 in file binary_bitwise_palindrome.s
+Comment: SECOND used once
+SRC 000000AC
+
+Symbol: SRC
+   Definitions
+      At line 93 in file binary_bitwise_palindrome.s
+   Uses
+      At line 13 in file binary_bitwise_palindrome.s
+Comment: SRC used once
+STOP 000000AA
+
+Symbol: STOP
+   Definitions
+      At line 90 in file binary_bitwise_palindrome.s
+   Uses
+      At line 52 in file binary_bitwise_palindrome.s
+      At line 91 in file binary_bitwise_palindrome.s
+
+SUCCESS 00000096
+
+Symbol: SUCCESS
+   Definitions
+      At line 78 in file binary_bitwise_palindrome.s
+   Uses
+      At line 75 in file binary_bitwise_palindrome.s
+Comment: SUCCESS used once
+bitwise_palindrome 00000000
+
+Symbol: bitwise_palindrome
+   Definitions
+      At line 8 in file binary_bitwise_palindrome.s
+   Uses
+      None
+Comment: bitwise_palindrome unused
+13 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DST 00000000
+
+Symbol: DST
+   Definitions
+      At line 96 in file binary_bitwise_palindrome.s
+   Uses
+      At line 79 in file binary_bitwise_palindrome.s
+      At line 85 in file binary_bitwise_palindrome.s
+
+dseg 00000000
+
+Symbol: dseg
+   Definitions
+      At line 95 in file binary_bitwise_palindrome.s
+   Uses
+      None
+Comment: dseg unused
+2 symbols
+349 symbols in table

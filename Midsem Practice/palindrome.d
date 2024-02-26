@@ -1,0 +1,1 @@
+palindrome.o: palindrome.s

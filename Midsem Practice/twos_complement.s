@@ -1,0 +1,28 @@
+	AREA RESET,DATA,READONLY
+	EXPORT __Vectors
+
+__Vectors
+	DCD 0x10001000
+	DCD Reset_Handler
+	ALIGN
+	AREA complement,CODE,READONLY
+	ENTRY
+	EXPORT Reset_Handler
+	
+Reset_Handler
+	LDR R0,=SRC
+	LDR R1,[R0]
+	EOR R2,R1,#0xFFFFFFFF
+	ADD R2,R2,#1
+	LDR R0,=DST
+	STR R2,[R0]
+	
+STOP
+	B STOP
+	
+SRC DCD 0x11111110
+
+	AREA dataseg,DATA,READWRITE
+DST DCD 0
+	
+	END
