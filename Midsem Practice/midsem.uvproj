@@ -392,9 +392,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>onecount.s</FileName>
+              <FileName>bubble_sort.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\onecount.s</FilePath>
+              <FilePath>.\bubble_sort.s</FilePath>
             </File>
           </Files>
         </Group>

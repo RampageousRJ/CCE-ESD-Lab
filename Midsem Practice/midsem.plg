@@ -249,3 +249,170 @@ linking...
 midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
 Program Size: Code=188 RO-data=8 RW-data=4 ZI-data=0  
 "midsem.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling binary_bitwise_palindrome.s...
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=188 RO-data=8 RW-data=4 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling hex_to_binary.s...
+hex_to_binary.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=72 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling hex_to_binary.s...
+hex_to_binary.s(47): warning: A1581W: Added 2 bytes of padding at address 0x42
+hex_to_binary.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=76 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling hex_to_binary.s...
+hex_to_binary.s(47): warning: A1581W: Added 2 bytes of padding at address 0x42
+hex_to_binary.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=76 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling hex_to_binary.s...
+hex_to_binary.s(47): warning: A1581W: Added 2 bytes of padding at address 0x42
+hex_to_binary.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=76 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling bubble_sort.s...
+bubble_sort.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=72 RO-data=8 RW-data=4 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling bubble_sort.s...
+bubble_sort.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=88 RO-data=8 RW-data=4 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling bubble_sort.s...
+bubble_sort.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=88 RO-data=8 RW-data=4 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling bubble_sort.s...
+bubble_sort.s(34): warning: A1581W: Added 2 bytes of padding at address 0x2a
+bubble_sort.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=92 RO-data=8 RW-data=4 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling bubble_sort.s...
+bubble_sort.s(34): error: A1106E: Missing comma
+bubble_sort.s - 1 Error(s), 0 Warning(s).
+assembling bubble_sort.s...
+bubble_sort.s(39): error: A1586E: Bad operand types (Register, Constant) for operator *
+bubble_sort.s(41): error: A1647E: Bad register name symbol, expected Integer register
+bubble_sort.s - 2 Error(s), 0 Warning(s).
+assembling bubble_sort.s...
+bubble_sort.s(68): warning: A1581W: Added 2 bytes of padding at address 0x7a
+bubble_sort.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=180 RO-data=8 RW-data=4 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling bubble_sort.s...
+bubble_sort.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=180 RO-data=8 RW-data=4 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling bubble_sort.s...
+bubble_sort.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=184 RO-data=8 RW-data=4 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling bubble_sort.s...
+bubble_sort.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=184 RO-data=8 RW-data=4 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling bubble_sort.s...
+bubble_sort.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=188 RO-data=8 RW-data=4 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling bubble_sort.s...
+bubble_sort.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=184 RO-data=8 RW-data=4 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling bubble_sort.s...
+bubble_sort.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=180 RO-data=8 RW-data=4 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling bubble_sort.s...
+bubble_sort.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=180 RO-data=8 RW-data=4 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling bubble_sort.s...
+bubble_sort.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=160 RO-data=8 RW-data=4 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling bubble_sort.s...
+bubble_sort.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=160 RO-data=8 RW-data=4 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling bubble_sort.s...
+bubble_sort.s(71): warning: A1581W: Added 2 bytes of padding at address 0x7e
+bubble_sort.s - 0 Error(s), 1 Warning(s).
+Rebuild target 'Target 1'
+assembling bubble_sort.s...
+bubble_sort.s(71): warning: A1581W: Added 2 bytes of padding at address 0x7e
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=164 RO-data=8 RW-data=4 ZI-data=0  
+"midsem.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=164 RO-data=8 RW-data=4 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling bubble_sort.s...
+bubble_sort.s(72): warning: A1581W: Added 2 bytes of padding at address 0x82
+bubble_sort.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=168 RO-data=8 RW-data=4 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
