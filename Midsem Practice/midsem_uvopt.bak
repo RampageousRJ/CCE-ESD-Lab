@@ -194,7 +194,7 @@
         <aSer4>0</aSer4>
         <StkLoc>0</StkLoc>
         <TrcWin>0</TrcWin>
-        <newCpu>3</newCpu>
+        <newCpu>0</newCpu>
         <uProt>0</uProt>
       </DebugFlag>
       <Tracepoint>
@@ -217,13 +217,13 @@
       <FileType>2</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>16</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>43</CurrentLine>
+      <TopLine>13</TopLine>
+      <CurrentLine>36</CurrentLine>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\onecount.s</PathWithFileName>
-      <FilenameWithoutPath>onecount.s</FilenameWithoutPath>
+      <PathWithFileName>..\Lab4\linear_search.s</PathWithFileName>
+      <FilenameWithoutPath>linear_search.s</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

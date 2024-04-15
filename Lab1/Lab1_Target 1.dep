@@ -1,2 +1,2 @@
 Dependencies for Project 'Lab1', Target 'Target 1': (DO NOT MODIFY !)
-F (.\subtract.s)(0x65DB8B7C)(--cpu Cortex-M3 -g --apcs=interwork -I "F:\Keil uVision\ARM\RV31\INC" -I "F:\Keil uVision\ARM\CMSIS\Include" -I "F:\Keil uVision\ARM\Inc\NXP\LPC17xx" --list "subtract.lst" --xref -o "subtract.o" --depend "subtract.d")
+F (.\sub128bit.s)(0x65E4972D)(--cpu Cortex-M3 -g --apcs=interwork -I "F:\Keil uVision\ARM\RV31\INC" -I "F:\Keil uVision\ARM\CMSIS\Include" -I "F:\Keil uVision\ARM\Inc\NXP\LPC17xx" --list "sub128bit.lst" --xref -o "sub128bit.o" --depend "sub128bit.d")

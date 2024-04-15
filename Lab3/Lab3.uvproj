@@ -392,9 +392,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>Hexadecimal_To_BCD.s</FileName>
+              <FileName>Packed_to_Unpacked.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\Hexadecimal_To_BCD.s</FilePath>
+              <FilePath>.\Packed_to_Unpacked.s</FilePath>
             </File>
           </Files>
         </Group>

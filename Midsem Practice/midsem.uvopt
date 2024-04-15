@@ -219,11 +219,11 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>45</TopLine>
-      <CurrentLine>49</CurrentLine>
+      <TopLine>2</TopLine>
+      <CurrentLine>20</CurrentLine>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\bubble_sort.s</PathWithFileName>
-      <FilenameWithoutPath>bubble_sort.s</FilenameWithoutPath>
+      <PathWithFileName>.\prac1.s</PathWithFileName>
+      <FilenameWithoutPath>prac1.s</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

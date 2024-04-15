@@ -7,3 +7,169 @@ E:\Study\OneDrive - Manipal Academy of Higher Education\Third Year\ESD\Lab1\Lab1
 Project File Date:  02/26/2024
 
 <h2>Output:</h2>
+assembling subtract.s...
+subtract.s(24): warning: A1581W: Added 2 bytes of padding at address 0x12
+subtract.s - 0 Error(s), 1 Warning(s).
+assembling q1.s...
+q1.s - 0 Error(s), 0 Warning(s).
+assembling q1.s...
+q1.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+ReverseArray.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=76 RO-data=8 RW-data=4 ZI-data=0  
+"ReverseArray.axf" - 0 Error(s), 1 Warning(s).
+assembling overlap.s...
+overlap.s(21): warning: A1581W: Added 2 bytes of padding at address 0x1a
+overlap.s - 0 Error(s), 1 Warning(s).
+Rebuild target 'Target 1'
+assembling overlap.s...
+overlap.s(21): warning: A1581W: Added 2 bytes of padding at address 0x1a
+linking...
+ReverseArray.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=36 RO-data=8 RW-data=52 ZI-data=0  
+"ReverseArray.axf" - 0 Error(s), 2 Warning(s).
+assembling overlap.s...
+overlap.s(21): warning: A1581W: Added 2 bytes of padding at address 0x1a
+overlap.s - 0 Error(s), 1 Warning(s).
+assembling overlap.s...
+overlap.s(21): warning: A1581W: Added 2 bytes of padding at address 0x1a
+overlap.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+ReverseArray.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=76 RO-data=8 RW-data=0 ZI-data=0  
+"ReverseArray.axf" - 0 Error(s), 1 Warning(s).
+assembling overlap.s...
+overlap.s(22): error: A1163E: Unknown opcode mydata,DATA,READWRITE , expecting opcode or Macro
+overlap.s - 1 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling overlap.s...
+overlap.s(22): error: A1163E: Unknown opcode mydata,DATA,READWRITE , expecting opcode or Macro
+Target not created
+assembling overlap.s...
+overlap.s(22): error: A1163E: Unknown opcode mydata,DATA,READWRITE , expecting opcode or Macro
+overlap.s - 1 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling overlap.s...
+overlap.s(22): error: A1163E: Unknown opcode mydata,DATA,READWRITE , expecting opcode or Macro
+Target not created
+assembling overlap.s...
+overlap.s(21): warning: A1581W: Added 2 bytes of padding at address 0x1a
+overlap.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+ReverseArray.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=76 RO-data=8 RW-data=0 ZI-data=0  
+"ReverseArray.axf" - 0 Error(s), 1 Warning(s).
+assembling overlap.s...
+overlap.s(21): warning: A1581W: Added 2 bytes of padding at address 0x1a
+overlap.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+ReverseArray.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=76 RO-data=8 RW-data=0 ZI-data=0  
+"ReverseArray.axf" - 0 Error(s), 1 Warning(s).
+assembling overlap.s...
+overlap.s(21): warning: A1581W: Added 2 bytes of padding at address 0x1a
+overlap.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+ReverseArray.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=76 RO-data=8 RW-data=0 ZI-data=0  
+"ReverseArray.axf" - 0 Error(s), 1 Warning(s).
+assembling overlap.s...
+overlap.s(22): warning: A1581W: Added 2 bytes of padding at address 0x1a
+overlap.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+ReverseArray.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=36 RO-data=8 RW-data=40 ZI-data=0  
+"ReverseArray.axf" - 0 Error(s), 1 Warning(s).
+assembling overlap.s...
+overlap.s(22): warning: A1581W: Added 2 bytes of padding at address 0x1a
+overlap.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+ReverseArray.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=36 RO-data=8 RW-data=40 ZI-data=0  
+"ReverseArray.axf" - 0 Error(s), 1 Warning(s).
+assembling reverse_array.s...
+reverse_array.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+ReverseArray.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=124 RO-data=8 RW-data=8 ZI-data=0  
+"ReverseArray.axf" - 0 Error(s), 1 Warning(s).
+assembling reverse_array.s...
+reverse_array.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+ReverseArray.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=124 RO-data=8 RW-data=8 ZI-data=0  
+"ReverseArray.axf" - 0 Error(s), 1 Warning(s).
+assembling add10.s...
+add10.s(22): warning: A1581W: Added 2 bytes of padding at address 0x1e
+add10.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+ReverseArray.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=88 RO-data=0 RW-data=8 ZI-data=0  
+"ReverseArray.axf" - 0 Error(s), 1 Warning(s).
+assembling add10.s...
+add10.s(22): warning: A1581W: Added 2 bytes of padding at address 0x1e
+add10.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+ReverseArray.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=88 RO-data=0 RW-data=8 ZI-data=0  
+"ReverseArray.axf" - 0 Error(s), 1 Warning(s).
+assembling add128bit.s...
+add128bit.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+ReverseArray.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=96 RO-data=0 RW-data=8 ZI-data=0  
+"ReverseArray.axf" - 0 Error(s), 1 Warning(s).
+assembling add128bit.s...
+add128bit.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+ReverseArray.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=96 RO-data=0 RW-data=8 ZI-data=0  
+"ReverseArray.axf" - 0 Error(s), 1 Warning(s).
+assembling add128bit.s...
+add128bit.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+ReverseArray.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=96 RO-data=0 RW-data=8 ZI-data=0  
+"ReverseArray.axf" - 0 Error(s), 1 Warning(s).
+assembling add128bit.s...
+add128bit.s(25): error: A1179E: Bad hexadecimal number
+add128bit.s - 1 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling add128bit.s...
+add128bit.s(25): error: A1179E: Bad hexadecimal number
+Target not created
+assembling add128bit.s...
+add128bit.s(25): error: A1179E: Bad hexadecimal number
+add128bit.s - 1 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling add128bit.s...
+add128bit.s(25): error: A1179E: Bad hexadecimal number
+Target not created
+assembling add128bit.s...
+add128bit.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+ReverseArray.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=96 RO-data=0 RW-data=8 ZI-data=0  
+"ReverseArray.axf" - 0 Error(s), 1 Warning(s).
+assembling sub128bit.s...
+sub128bit.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+ReverseArray.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=88 RO-data=8 RW-data=4 ZI-data=0  
+"ReverseArray.axf" - 0 Error(s), 1 Warning(s).

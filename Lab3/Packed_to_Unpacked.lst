@@ -1,0 +1,139 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET,DATA,READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         __Vectors
+    4 00000000 10004000        DCD              0X10004000
+    5 00000004 00000000        DCD              Reset_Handler
+    6 00000008                 ALIGN
+    7 00000008                 AREA             mycode,CODE,READONLY
+    8 00000000                 ENTRY
+    9 00000000                 EXPORT           Reset_Handler
+   10 00000000         
+   11 00000000         Reset_Handler
+   12 00000000 4808            LDR              R0,=NUM
+   13 00000002 6801            LDR              R1,[R0]
+   14 00000004 F8DF A020       LDR              R10,=DST
+   15 00000008 F04F 0504       LDR              R5,=0x4
+   16 0000000C         
+   17 0000000C         LOOP
+   18 0000000C F001 020F       AND              R2,R1,#0xF
+   19 00000010 EA4F 1111       LSR              R1,R1,#4
+   20 00000014 F80A 2B01       STRB             R2,[R10],#1
+   21 00000018 1E6D            SUBS             R5,R5,#1
+   22 0000001A D1F7            BNE              LOOP
+   23 0000001C         
+   24 0000001C         STOP
+   25 0000001C E7FE            B                STOP
+   26 0000001E         
+   27 0000001E 00 00 00001234 
+                       NUM     DCD              0x1234
+   28 00000024 00000000 
+              00000000         AREA             DATASEG,DATA,READWRITE
+   29 00000000         
+   30 00000000 00000000 
+                       DST     DCD              0x0
+   31 00000004                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=Packed_t
+o_Unpacked.d -oPacked_to_Unpacked.o -I"F:\Keil uVision\ARM\RV31\INC" -I"F:\Keil
+ uVision\ARM\CMSIS\Include" -I"F:\Keil uVision\ARM\Inc\NXP\LPC17xx" --list=Pack
+ed_to_Unpacked.lst Packed_to_Unpacked.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file Packed_to_Unpacked.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 3 in file Packed_to_Unpacked.s
+   Uses
+      At line 2 in file Packed_to_Unpacked.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+LOOP 0000000C
+
+Symbol: LOOP
+   Definitions
+      At line 17 in file Packed_to_Unpacked.s
+   Uses
+      At line 22 in file Packed_to_Unpacked.s
+Comment: LOOP used once
+NUM 00000020
+
+Symbol: NUM
+   Definitions
+      At line 27 in file Packed_to_Unpacked.s
+   Uses
+      At line 12 in file Packed_to_Unpacked.s
+Comment: NUM used once
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 11 in file Packed_to_Unpacked.s
+   Uses
+      At line 5 in file Packed_to_Unpacked.s
+      At line 9 in file Packed_to_Unpacked.s
+
+STOP 0000001C
+
+Symbol: STOP
+   Definitions
+      At line 24 in file Packed_to_Unpacked.s
+   Uses
+      At line 25 in file Packed_to_Unpacked.s
+Comment: STOP used once
+mycode 00000000
+
+Symbol: mycode
+   Definitions
+      At line 7 in file Packed_to_Unpacked.s
+   Uses
+      None
+Comment: mycode unused
+5 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DATASEG 00000000
+
+Symbol: DATASEG
+   Definitions
+      At line 28 in file Packed_to_Unpacked.s
+   Uses
+      None
+Comment: DATASEG unused
+DST 00000000
+
+Symbol: DST
+   Definitions
+      At line 30 in file Packed_to_Unpacked.s
+   Uses
+      At line 14 in file Packed_to_Unpacked.s
+Comment: DST used once
+2 symbols
+341 symbols in table

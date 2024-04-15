@@ -1,4 +1,4 @@
---cpu Cortex-M3 "bubble_sort.o" 
+--cpu Cortex-M3 "prac1.o" 
 --strict --scatter "midsem.sct" 
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 

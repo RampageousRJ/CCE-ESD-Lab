@@ -15,6 +15,14 @@ linking...
 Lab2.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
 Program Size: Code=84 RO-data=8 RW-data=4 ZI-data=0  
 "Lab2.axf" - 0 Error(s), 1 Warning(s).
+assembling MLA_nSum.s...
+MLA_nSum.s(30): warning: A1581W: Added 2 bytes of padding at address 0x22
+MLA_nSum.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Lab2.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=84 RO-data=8 RW-data=4 ZI-data=0  
+"Lab2.axf" - 0 Error(s), 1 Warning(s).
 assembling GCD.s...
 GCD.s(40): warning: A1581W: Added 2 bytes of padding at address 0x22
 GCD.s - 0 Error(s), 1 Warning(s).
@@ -22,61 +30,6 @@ Build target 'Target 1'
 linking...
 Lab2.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
 Program Size: Code=56 RO-data=8 RW-data=4 ZI-data=0  
-"Lab2.axf" - 0 Error(s), 1 Warning(s).
-Rebuild target 'Target 1'
-assembling GCD.s...
-GCD.s(40): warning: A1581W: Added 2 bytes of padding at address 0x22
-linking...
-Lab2.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=56 RO-data=8 RW-data=4 ZI-data=0  
-"Lab2.axf" - 0 Error(s), 2 Warning(s).
-assembling GCD.s...
-GCD.s(40): warning: A1581W: Added 2 bytes of padding at address 0x22
-GCD.s - 0 Error(s), 1 Warning(s).
-Build target 'Target 1'
-linking...
-Lab2.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=56 RO-data=8 RW-data=4 ZI-data=0  
-"Lab2.axf" - 0 Error(s), 1 Warning(s).
-assembling LCM.s...
-LCM.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-Lab2.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=60 RO-data=8 RW-data=4 ZI-data=0  
-"Lab2.axf" - 0 Error(s), 1 Warning(s).
-Rebuild target 'Target 1'
-assembling LCM.s...
-linking...
-Lab2.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=60 RO-data=8 RW-data=4 ZI-data=0  
-"Lab2.axf" - 0 Error(s), 1 Warning(s).
-assembling LCM.s...
-LCM.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-Lab2.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=80 RO-data=8 RW-data=4 ZI-data=0  
-"Lab2.axf" - 0 Error(s), 1 Warning(s).
-Rebuild target 'Target 1'
-assembling LCM.s...
-linking...
-Lab2.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=80 RO-data=8 RW-data=4 ZI-data=0  
-"Lab2.axf" - 0 Error(s), 1 Warning(s).
-assembling LCM.s...
-LCM.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-Lab2.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=80 RO-data=8 RW-data=4 ZI-data=0  
-"Lab2.axf" - 0 Error(s), 1 Warning(s).
-assembling LCM.s...
-LCM.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-Lab2.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=80 RO-data=8 RW-data=4 ZI-data=0  
 "Lab2.axf" - 0 Error(s), 1 Warning(s).
 assembling LCM.s...
 LCM.s - 0 Error(s), 0 Warning(s).

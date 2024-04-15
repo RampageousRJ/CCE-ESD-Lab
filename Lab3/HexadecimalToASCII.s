@@ -30,7 +30,7 @@ Greater
 STOP
 	B STOP
 
-Num1 DCD 0x33
+Num1 DCD 0x43
 
 	AREA data1,DATA,READWRITE
 DST DCD 0

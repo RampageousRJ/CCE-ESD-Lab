@@ -4,415 +4,249 @@
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
 E:\Study\OneDrive - Manipal Academy of Higher Education\Third Year\ESD\Midsem Practice\midsem.uvproj
-Project File Date:  02/26/2024
+Project File Date:  03/04/2024
 
 <h2>Output:</h2>
-assembling hex_to_binary.s...
-hex_to_binary.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=60 RO-data=8 RW-data=0 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling hex_to_binary.s...
-hex_to_binary.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=60 RO-data=8 RW-data=0 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling hex_to_binary.s...
-hex_to_binary.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=60 RO-data=8 RW-data=0 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling hex_to_binary.s...
-hex_to_binary.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=60 RO-data=8 RW-data=0 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling hex_to_binary.s...
-hex_to_binary.s - 0 Error(s), 0 Warning(s).
+assembling LDM_STM.s...
+LDM_STM.s(20): warning: A1581W: Added 2 bytes of padding at address 0xa
+LDM_STM.s - 0 Error(s), 1 Warning(s).
 Build target 'Target 1'
 linking...
 midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
 Program Size: Code=64 RO-data=8 RW-data=0 ZI-data=0  
 "midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling hex_to_binary.s...
-hex_to_binary.s(44): warning: A1581W: Added 2 bytes of padding at address 0x3a
-hex_to_binary.s - 0 Error(s), 1 Warning(s).
+assembling LDM_STM.s...
+LDM_STM.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=60 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling LDM_STM.s...
+LDM_STM.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=64 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling LDM_STM.s...
+LDM_STM.s(21): warning: A1581W: Added 2 bytes of padding at address 0xe
+LDM_STM.s - 0 Error(s), 1 Warning(s).
 Build target 'Target 1'
 linking...
 midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
 Program Size: Code=68 RO-data=8 RW-data=0 ZI-data=0  
 "midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling hex_to_binary.s...
-hex_to_binary.s(44): warning: A1581W: Added 2 bytes of padding at address 0x3a
-hex_to_binary.s - 0 Error(s), 1 Warning(s).
+assembling LDM_STM.s...
+LDM_STM.s - 0 Error(s), 0 Warning(s).
 Build target 'Target 1'
 linking...
 midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
 Program Size: Code=68 RO-data=8 RW-data=0 ZI-data=0  
 "midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling hex_to_binary.s...
-hex_to_binary.s(44): warning: A1581W: Added 2 bytes of padding at address 0x3a
-hex_to_binary.s - 0 Error(s), 1 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=68 RO-data=8 RW-data=0 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling hex_to_binary.s...
-hex_to_binary.s(44): warning: A1581W: Added 2 bytes of padding at address 0x3a
-hex_to_binary.s - 0 Error(s), 1 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=68 RO-data=8 RW-data=0 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-Build target 'Target 1'
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s(44): warning: A1581W: Added 2 bytes of padding at address 0x3a
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=68 RO-data=8 RW-data=0 ZI-data=0  
-"midsem.axf" - 0 Error(s), 2 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=72 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=112 RO-data=8 RW-data=0 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=112 RO-data=8 RW-data=0 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=112 RO-data=8 RW-data=0 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s(66): warning: A1581W: Added 2 bytes of padding at address 0x6e
-binary_bitwise_palindrome.s - 0 Error(s), 1 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=120 RO-data=8 RW-data=0 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s(66): warning: A1581W: Added 2 bytes of padding at address 0x6e
-binary_bitwise_palindrome.s - 0 Error(s), 1 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=120 RO-data=8 RW-data=0 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s(88): warning: A1581W: Added 2 bytes of padding at address 0x9a
-binary_bitwise_palindrome.s - 0 Error(s), 1 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=172 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=172 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=172 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=172 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=172 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=184 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=184 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s - 0 Error(s), 0 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s - 0 Error(s), 0 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=180 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=180 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=180 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=180 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=180 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=180 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=180 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=184 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=188 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling binary_bitwise_palindrome.s...
-binary_bitwise_palindrome.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=188 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-Build target 'Target 1'
-assembling binary_bitwise_palindrome.s...
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=188 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling hex_to_binary.s...
-hex_to_binary.s - 0 Error(s), 0 Warning(s).
+assembling LDM_STM.s...
+LDM_STM.s - 0 Error(s), 0 Warning(s).
 Build target 'Target 1'
 linking...
 midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
 Program Size: Code=72 RO-data=8 RW-data=0 ZI-data=0  
 "midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling hex_to_binary.s...
-hex_to_binary.s(47): warning: A1581W: Added 2 bytes of padding at address 0x42
-hex_to_binary.s - 0 Error(s), 1 Warning(s).
+assembling LDM_STM.s...
+LDM_STM.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=68 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling LDM_STM.s...
+LDM_STM.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=68 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling LDM_STM.s...
+LDM_STM.s(24): warning: A1581W: Added 2 bytes of padding at address 0x12
+LDM_STM.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=72 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling stack.s...
+stack.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=68 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling stack.s...
+stack.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=68 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling stack.s...
+stack.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=68 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling stack.s...
+stack.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=68 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling prac1.s...
+prac1.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=84 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling prac1.s...
+prac1.s(26): warning: A1581W: Added 2 bytes of padding at address 0x1e
+prac1.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=88 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling prac1.s...
+prac1.s(25): warning: A1581W: Added 2 bytes of padding at address 0x1a
+prac1.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=84 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling prac1.s...
+prac1.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=84 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling prac1.s...
+prac1.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=84 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling prac1.s...
+prac1.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=84 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling prac1.s...
+prac1.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=72 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling prac1.s...
+prac1.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=72 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling prac1.s...
+prac1.s(23): warning: A1581W: Added 2 bytes of padding at address 0xe
+prac1.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=72 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling prac1.s...
+prac1.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=72 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling prac1.s...
+prac1.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=72 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling prac1.s...
+prac1.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=72 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling prac1.s...
+prac1.s - 0 Error(s), 0 Warning(s).
 Build target 'Target 1'
 linking...
 midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
 Program Size: Code=76 RO-data=8 RW-data=0 ZI-data=0  
 "midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling hex_to_binary.s...
-hex_to_binary.s(47): warning: A1581W: Added 2 bytes of padding at address 0x42
-hex_to_binary.s - 0 Error(s), 1 Warning(s).
+assembling prac1.s...
+prac1.s(23): warning: A1581W: Added 2 bytes of padding at address 0x12
+prac1.s - 0 Error(s), 1 Warning(s).
 Build target 'Target 1'
 linking...
 midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
 Program Size: Code=76 RO-data=8 RW-data=0 ZI-data=0  
 "midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling hex_to_binary.s...
-hex_to_binary.s(47): warning: A1581W: Added 2 bytes of padding at address 0x42
-hex_to_binary.s - 0 Error(s), 1 Warning(s).
+assembling prac1.s...
+prac1.s(30): warning: A1581W: Added 2 bytes of padding at address 0x22
+prac1.s - 0 Error(s), 1 Warning(s).
 Build target 'Target 1'
 linking...
 midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=76 RO-data=8 RW-data=0 ZI-data=0  
+Program Size: Code=96 RO-data=8 RW-data=0 ZI-data=0  
 "midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling bubble_sort.s...
-bubble_sort.s - 0 Error(s), 0 Warning(s).
 Build target 'Target 1'
+assembling prac1.s...
+prac1.s(30): warning: A1581W: Added 2 bytes of padding at address 0x22
 linking...
 midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=72 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling bubble_sort.s...
-bubble_sort.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=88 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling bubble_sort.s...
-bubble_sort.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=88 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling bubble_sort.s...
-bubble_sort.s(34): warning: A1581W: Added 2 bytes of padding at address 0x2a
-bubble_sort.s - 0 Error(s), 1 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=92 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling bubble_sort.s...
-bubble_sort.s(34): error: A1106E: Missing comma
-bubble_sort.s - 1 Error(s), 0 Warning(s).
-assembling bubble_sort.s...
-bubble_sort.s(39): error: A1586E: Bad operand types (Register, Constant) for operator *
-bubble_sort.s(41): error: A1647E: Bad register name symbol, expected Integer register
-bubble_sort.s - 2 Error(s), 0 Warning(s).
-assembling bubble_sort.s...
-bubble_sort.s(68): warning: A1581W: Added 2 bytes of padding at address 0x7a
-bubble_sort.s - 0 Error(s), 1 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=180 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling bubble_sort.s...
-bubble_sort.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=180 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling bubble_sort.s...
-bubble_sort.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=184 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling bubble_sort.s...
-bubble_sort.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=184 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling bubble_sort.s...
-bubble_sort.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=188 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling bubble_sort.s...
-bubble_sort.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=184 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling bubble_sort.s...
-bubble_sort.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=180 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling bubble_sort.s...
-bubble_sort.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=180 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling bubble_sort.s...
-bubble_sort.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=160 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling bubble_sort.s...
-bubble_sort.s - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=160 RO-data=8 RW-data=4 ZI-data=0  
-"midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling bubble_sort.s...
-bubble_sort.s(71): warning: A1581W: Added 2 bytes of padding at address 0x7e
-bubble_sort.s - 0 Error(s), 1 Warning(s).
-Rebuild target 'Target 1'
-assembling bubble_sort.s...
-bubble_sort.s(71): warning: A1581W: Added 2 bytes of padding at address 0x7e
-linking...
-midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=164 RO-data=8 RW-data=4 ZI-data=0  
+Program Size: Code=100 RO-data=8 RW-data=0 ZI-data=0  
 "midsem.axf" - 0 Error(s), 2 Warning(s).
+assembling prac1.s...
+prac1.s(30): warning: A1581W: Added 2 bytes of padding at address 0x22
+prac1.s - 0 Error(s), 1 Warning(s).
 Build target 'Target 1'
 linking...
 midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=164 RO-data=8 RW-data=4 ZI-data=0  
+Program Size: Code=100 RO-data=8 RW-data=0 ZI-data=0  
 "midsem.axf" - 0 Error(s), 1 Warning(s).
-assembling bubble_sort.s...
-bubble_sort.s(72): warning: A1581W: Added 2 bytes of padding at address 0x82
-bubble_sort.s - 0 Error(s), 1 Warning(s).
+assembling prac1.s...
+prac1.s(31): warning: A1581W: Added 2 bytes of padding at address 0x22
+prac1.s - 0 Error(s), 1 Warning(s).
 Build target 'Target 1'
 linking...
 midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=168 RO-data=8 RW-data=4 ZI-data=0  
+Program Size: Code=56 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling prac1.s...
+prac1.s(31): warning: A1581W: Added 2 bytes of padding at address 0x22
+prac1.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=56 RO-data=8 RW-data=0 ZI-data=0  
+"midsem.axf" - 0 Error(s), 1 Warning(s).
+assembling prac1.s...
+prac1.s(31): warning: A1581W: Added 2 bytes of padding at address 0x22
+prac1.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+midsem.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=56 RO-data=8 RW-data=0 ZI-data=0  
 "midsem.axf" - 0 Error(s), 1 Warning(s).

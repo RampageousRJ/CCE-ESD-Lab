@@ -1,2 +1,2 @@
 Dependencies for Project 'Lab2', Target 'Target 1': (DO NOT MODIFY !)
-F (.\LCM.s)(0x65C9C2C1)(--cpu Cortex-M3 -g --apcs=interwork -I "F:\Keil uVision\ARM\RV31\INC" -I "F:\Keil uVision\ARM\CMSIS\Include" -I "F:\Keil uVision\ARM\Inc\NXP\LPC17xx" --list "LCM.lst" --xref -o "LCM.o" --depend "LCM.d")
+F (.\LCM.s)(0x65C9C36A)(--cpu Cortex-M3 -g --apcs=interwork -I "F:\Keil uVision\ARM\RV31\INC" -I "F:\Keil uVision\ARM\CMSIS\Include" -I "F:\Keil uVision\ARM\Inc\NXP\LPC17xx" --list "LCM.lst" --xref -o "LCM.o" --depend "LCM.d")

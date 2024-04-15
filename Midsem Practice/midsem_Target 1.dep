@@ -1,2 +1,2 @@
 Dependencies for Project 'midsem', Target 'Target 1': (DO NOT MODIFY !)
-F (.\bubble_sort.s)(0x65DC4897)(--cpu Cortex-M3 -g --apcs=interwork -I "F:\Keil uVision\ARM\RV31\INC" -I "F:\Keil uVision\ARM\CMSIS\Include" -I "F:\Keil uVision\ARM\Inc\NXP\LPC17xx" --list "bubble_sort.lst" --xref -o "bubble_sort.o" --depend "bubble_sort.d")
+F (.\prac1.s)(0x65F900E4)(--cpu Cortex-M3 -g --apcs=interwork -I "F:\Keil uVision\ARM\RV31\INC" -I "F:\Keil uVision\ARM\CMSIS\Include" -I "F:\Keil uVision\ARM\Inc\NXP\LPC17xx" --list "prac1.lst" --xref -o "prac1.o" --depend "prac1.d")

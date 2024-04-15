@@ -392,9 +392,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>onecount.s</FileName>
+              <FileName>linear_search.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\onecount.s</FilePath>
+              <FilePath>..\Lab4\linear_search.s</FilePath>
             </File>
           </Files>
         </Group>

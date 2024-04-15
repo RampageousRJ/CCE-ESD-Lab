@@ -1,0 +1,1 @@
+LDM_STM.o: LDM_STM.s

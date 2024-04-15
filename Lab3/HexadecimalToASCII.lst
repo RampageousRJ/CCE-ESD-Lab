@@ -16,28 +16,35 @@ ARM Macro Assembler    Page 1
    10 00000000                 EXPORT           Reset_Handler
    11 00000000         
    12 00000000         Reset_Handler
-   13 00000000 F04F 000A       MOV              R0,#0xA
-   14 00000004 4907            LDR              R1,=Num1
-   15 00000006 4A08            LDR              R2,=DST
-   16 00000008 680B            LDR              R3,[R1]
-   17 0000000A F003 040F       AND              R4,R3,#0x0F
-   18 0000000E F003 05F0       AND              R5,R3,#0xF0
-   19 00000012 EA4F 1535       MOV              R5,R5,ROR #4
-   20 00000016 FB05 4500       MLA              R5,R5,R0,R4
-   21 0000001A 6015            STR              R5,[R2]
-   22 0000001C         
-   23 0000001C         STOP
-   24 0000001C E7FE            B                STOP
-   25 0000001E         
-   26 0000001E 00 00 00000042 
-                       Num1    DCD              0x42
-   27 00000024         
-   28 00000024 00000000 
+   13 00000000 4908            LDR              R1,=Num1
+   14 00000002 4A09            LDR              R2,=DST
+   15 00000004 680B            LDR              R3,[R1]
+   16 00000006 2B40            CMP              R3,#0x40
+   17 00000008 DB00            BLT              Lesser
+   18 0000000A E003            B                Greater
+   19 0000000C         
+   20 0000000C         Lesser
+   21 0000000C F1A3 0330       SUB              R3,R3,#0x30
+   22 00000010 6013            STR              R3,[R2]
+   23 00000012 E003            B                STOP
+   24 00000014         
+   25 00000014         Greater
+   26 00000014 F1A3 0337       SUB              R3,R3,#0x37
+   27 00000018 6013            STR              R3,[R2]
+   28 0000001A E7FF            B                STOP
+   29 0000001C         
+   30 0000001C         STOP
+   31 0000001C E7FE            B                STOP
+   32 0000001E         
+   33 0000001E 00 00 00000043 
+                       Num1    DCD              0x43
+   34 00000024         
+   35 00000024 00000000 
               00000000         AREA             data1,DATA,READWRITE
-   29 00000000 00000000 
+   36 00000000 00000000 
                        DST     DCD              0
-   30 00000004         
-   31 00000004                 END
+   37 00000004         
+   38 00000004                 END
 Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=Hexadeci
 malToASCII.d -oHexadecimalToASCII.o -I"F:\Keil uVision\ARM\RV31\INC" -I"F:\Keil
  uVision\ARM\CMSIS\Include" -I"F:\Keil uVision\ARM\Inc\NXP\LPC17xx" --list=Hexa
@@ -71,13 +78,29 @@ Comment: __Vectors used once
 ARM Macro Assembler    Page 1 Alphabetic symbol ordering
 Relocatable symbols
 
+Greater 00000014
+
+Symbol: Greater
+   Definitions
+      At line 25 in file HexadecimalToASCII.s
+   Uses
+      At line 18 in file HexadecimalToASCII.s
+Comment: Greater used once
+Lesser 0000000C
+
+Symbol: Lesser
+   Definitions
+      At line 20 in file HexadecimalToASCII.s
+   Uses
+      At line 17 in file HexadecimalToASCII.s
+Comment: Lesser used once
 Num1 00000020
 
 Symbol: Num1
    Definitions
-      At line 26 in file HexadecimalToASCII.s
+      At line 33 in file HexadecimalToASCII.s
    Uses
-      At line 14 in file HexadecimalToASCII.s
+      At line 13 in file HexadecimalToASCII.s
 Comment: Num1 used once
 Reset_Handler 00000000
 
@@ -92,10 +115,12 @@ STOP 0000001C
 
 Symbol: STOP
    Definitions
-      At line 23 in file HexadecimalToASCII.s
+      At line 30 in file HexadecimalToASCII.s
    Uses
-      At line 24 in file HexadecimalToASCII.s
-Comment: STOP used once
+      At line 23 in file HexadecimalToASCII.s
+      At line 28 in file HexadecimalToASCII.s
+      At line 31 in file HexadecimalToASCII.s
+
 myCode 00000000
 
 Symbol: myCode
@@ -104,7 +129,7 @@ Symbol: myCode
    Uses
       None
 Comment: myCode unused
-4 symbols
+6 symbols
 
 
 
@@ -115,17 +140,17 @@ DST 00000000
 
 Symbol: DST
    Definitions
-      At line 29 in file HexadecimalToASCII.s
+      At line 36 in file HexadecimalToASCII.s
    Uses
-      At line 15 in file HexadecimalToASCII.s
+      At line 14 in file HexadecimalToASCII.s
 Comment: DST used once
 data1 00000000
 
 Symbol: data1
    Definitions
-      At line 28 in file HexadecimalToASCII.s
+      At line 35 in file HexadecimalToASCII.s
    Uses
       None
 Comment: data1 unused
 2 symbols
-340 symbols in table
+342 symbols in table

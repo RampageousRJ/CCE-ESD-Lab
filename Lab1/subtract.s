@@ -12,7 +12,6 @@ __Vectors
 Reset_Handler
 	LDR R0,=SRC1
 	LDR R1,[R0]
-	
 	LDR R0,=SRC2
 	LDR R2,[R0]
 	SUB R1,R1,R2

@@ -7,36 +7,94 @@ E:\Study\OneDrive - Manipal Academy of Higher Education\Third Year\ESD\Lab3\Lab3
 Project File Date:  02/12/2024
 
 <h2>Output:</h2>
-assembling Hexadecimal_To_BCD.s...
-Hexadecimal_To_BCD.s - 0 Error(s), 0 Warning(s).
-assembling Hexadecimal_To_BCD.s...
-Hexadecimal_To_BCD.s - 0 Error(s), 0 Warning(s).
+assembling Packed_to_Unpacked.s...
+Packed_to_Unpacked.s(18): warning: A1581W: Added 2 bytes of padding at address 0x6
+Packed_to_Unpacked.s - 0 Error(s), 1 Warning(s).
 Build target 'Target 1'
 linking...
 Lab3.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=80 RO-data=8 RW-data=4 ZI-data=0  
+Program Size: Code=16 RO-data=8 RW-data=0 ZI-data=0  
 "Lab3.axf" - 0 Error(s), 1 Warning(s).
-assembling Hexadecimal_To_BCD.s...
-Hexadecimal_To_BCD.s - 0 Error(s), 0 Warning(s).
+assembling Packed_to_Unpacked.s...
+Packed_to_Unpacked.s - 0 Error(s), 0 Warning(s).
 Build target 'Target 1'
 linking...
 Lab3.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=80 RO-data=8 RW-data=4 ZI-data=0  
+Program Size: Code=16 RO-data=8 RW-data=0 ZI-data=0  
 "Lab3.axf" - 0 Error(s), 1 Warning(s).
+assembling Packed_to_Unpacked.s...
+Packed_to_Unpacked.s(14): error: A1169E: Missing close square bracket
+Packed_to_Unpacked.s - 1 Error(s), 0 Warning(s).
 Build target 'Target 1'
-assembling Hexadecimal_To_BCD.s...
-Hexadecimal_To_BCD.s(43): warning: A1581W: Added 2 bytes of padding at address 0x46
+assembling Packed_to_Unpacked.s...
+Packed_to_Unpacked.s(14): error: A1169E: Missing close square bracket
+Target not created
+assembling Packed_to_Unpacked.s...
+Packed_to_Unpacked.s - 0 Error(s), 0 Warning(s).
+assembling Packed_to_Unpacked.s...
+Packed_to_Unpacked.s - 0 Error(s), 0 Warning(s).
+assembling Packed_to_Unpacked.s...
+Packed_to_Unpacked.s(13): error: A1106E: Missing comma
+Packed_to_Unpacked.s - 1 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Packed_to_Unpacked.s...
+Packed_to_Unpacked.s(13): error: A1106E: Missing comma
+Target not created
+assembling Packed_to_Unpacked.s...
+Packed_to_Unpacked.s - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
 linking...
 Lab3.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=84 RO-data=8 RW-data=4 ZI-data=0  
-"Lab3.axf" - 0 Error(s), 2 Warning(s).
-Build target 'Target 1'
-linking...
-Lab3.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=84 RO-data=8 RW-data=4 ZI-data=0  
+Program Size: Code=16 RO-data=8 RW-data=0 ZI-data=0  
 "Lab3.axf" - 0 Error(s), 1 Warning(s).
+assembling Packed_to_Unpacked.s...
+Packed_to_Unpacked.s - 0 Error(s), 0 Warning(s).
 Build target 'Target 1'
 linking...
 Lab3.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
-Program Size: Code=84 RO-data=8 RW-data=4 ZI-data=0  
+Program Size: Code=16 RO-data=8 RW-data=0 ZI-data=0  
+"Lab3.axf" - 0 Error(s), 1 Warning(s).
+assembling Packed_to_Unpacked.s...
+Packed_to_Unpacked.s(14): error: A1516E: Bad symbol 'SRC', not defined or external
+Packed_to_Unpacked.s(23): warning: A1581W: Added 2 bytes of padding at address 0x16
+Packed_to_Unpacked.s - 1 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling Packed_to_Unpacked.s...
+Packed_to_Unpacked.s(14): error: A1516E: Bad symbol 'SRC', not defined or external
+Packed_to_Unpacked.s(23): warning: A1581W: Added 2 bytes of padding at address 0x16
+Target not created
+assembling Packed_to_Unpacked.s...
+Packed_to_Unpacked.s(23): warning: A1581W: Added 2 bytes of padding at address 0x16
+Packed_to_Unpacked.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Lab3.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=36 RO-data=8 RW-data=4 ZI-data=0  
+"Lab3.axf" - 0 Error(s), 1 Warning(s).
+assembling Packed_to_Unpacked.s...
+Packed_to_Unpacked.s(22): error: A1112E: Expected address expression
+Packed_to_Unpacked.s - 1 Error(s), 0 Warning(s).
+assembling Packed_to_Unpacked.s...
+Packed_to_Unpacked.s(27): warning: A1581W: Added 2 bytes of padding at address 0x1e
+Packed_to_Unpacked.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Lab3.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=44 RO-data=8 RW-data=4 ZI-data=0  
+"Lab3.axf" - 0 Error(s), 1 Warning(s).
+assembling Packed_to_Unpacked.s...
+Packed_to_Unpacked.s(27): warning: A1581W: Added 2 bytes of padding at address 0x1e
+Packed_to_Unpacked.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Lab3.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=44 RO-data=8 RW-data=4 ZI-data=0  
+"Lab3.axf" - 0 Error(s), 1 Warning(s).
+assembling Packed_to_Unpacked.s...
+Packed_to_Unpacked.s(27): warning: A1581W: Added 2 bytes of padding at address 0x1e
+Packed_to_Unpacked.s - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Lab3.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=44 RO-data=8 RW-data=4 ZI-data=0  
 "Lab3.axf" - 0 Error(s), 1 Warning(s).

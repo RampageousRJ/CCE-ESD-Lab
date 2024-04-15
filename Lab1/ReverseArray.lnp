@@ -1,4 +1,4 @@
---cpu Cortex-M3 "subtract.o" 
+--cpu Cortex-M3 "sub128bit.o" 
 --strict --scatter "ReverseArray.sct" 
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 

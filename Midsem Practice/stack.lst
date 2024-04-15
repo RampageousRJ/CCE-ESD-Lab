@@ -1,0 +1,145 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET,DATA,READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         
+    4 00000000         __Vectors
+    5 00000000 10000000        DCD              0x10000000
+    6 00000004 00000000        DCD              Reset_Handler
+    7 00000008                 ALIGN
+    8 00000008                 AREA             myCode, CODE, READONLY
+    9 00000000                 ENTRY
+   10 00000000                 EXPORT           Reset_Handler
+   11 00000000         
+   12 00000000         Reset_Handler
+   13 00000000 480E            LDR              R0,=0x78563412
+   14 00000002 490F            LDR              R1,=0x12EFCDAB
+   15 00000004 4A0D            LDR              R2,=0x78563412
+   16 00000006 4B0E            LDR              R3,=0x12EFCDAB
+   17 00000008 F04F 2510       LDR              R5,=0x10001000
+   18 0000000C BC02            POP              {R1}
+   19 0000000E         
+   20 0000000E         STOP
+   21 0000000E E7FE            B                STOP
+   22 00000010         
+   23 00000010 00000017 
+                       Num1    DCD              23
+   24 00000014 000000FF 
+              0000002A 
+              00000017 
+              0000000B 
+              00000051 
+              00000013 
+              00000064 
+              00000002 
+              0000004E 
+              0000002C SRC     DCD              255,42,23,11,81,19,100,2,78,44
+   25 0000003C         
+   26 0000003C 78563412 
+              12EFCDAB         AREA             data1,DATA,READWRITE
+   27 00000000 00000000 
+                       DST     DCD              0
+   28 00000004         
+   29 00000004                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=stack.d 
+-ostack.o -I"F:\Keil uVision\ARM\RV31\INC" -I"F:\Keil uVision\ARM\CMSIS\Include
+" -I"F:\Keil uVision\ARM\Inc\NXP\LPC17xx" --list=stack.lst stack.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file stack.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 4 in file stack.s
+   Uses
+      At line 2 in file stack.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Num1 00000010
+
+Symbol: Num1
+   Definitions
+      At line 23 in file stack.s
+   Uses
+      None
+Comment: Num1 unused
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 12 in file stack.s
+   Uses
+      At line 6 in file stack.s
+      At line 10 in file stack.s
+
+SRC 00000014
+
+Symbol: SRC
+   Definitions
+      At line 24 in file stack.s
+   Uses
+      None
+Comment: SRC unused
+STOP 0000000E
+
+Symbol: STOP
+   Definitions
+      At line 20 in file stack.s
+   Uses
+      At line 21 in file stack.s
+Comment: STOP used once
+myCode 00000000
+
+Symbol: myCode
+   Definitions
+      At line 8 in file stack.s
+   Uses
+      None
+Comment: myCode unused
+5 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DST 00000000
+
+Symbol: DST
+   Definitions
+      At line 27 in file stack.s
+   Uses
+      None
+Comment: DST unused
+data1 00000000
+
+Symbol: data1
+   Definitions
+      At line 26 in file stack.s
+   Uses
+      None
+Comment: data1 unused
+2 symbols
+341 symbols in table

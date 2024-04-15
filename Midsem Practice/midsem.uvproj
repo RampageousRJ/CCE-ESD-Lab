@@ -392,9 +392,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>bubble_sort.s</FileName>
+              <FileName>prac1.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\bubble_sort.s</FilePath>
+              <FilePath>.\prac1.s</FilePath>
             </File>
           </Files>
         </Group>

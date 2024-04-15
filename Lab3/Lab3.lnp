@@ -1,4 +1,4 @@
---cpu Cortex-M3 "hexadecimal_to_bcd.o" 
+--cpu Cortex-M3 "packed_to_unpacked.o" 
 --strict --scatter "Lab3.sct" 
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 

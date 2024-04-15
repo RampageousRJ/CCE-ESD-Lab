@@ -1,9 +1,9 @@
 *** Creating Trace Output File 'ReverseArray.tra' Ok.
 ### Preparing for ADS-LD.
 ### Creating ADS-LD Command Line
-### List of Objects: adding '"subtract.o"'
+### List of Objects: adding '"sub128bit.o"'
 ### ADS-LD Command completed:
---cpu Cortex-M3 "subtract.o" 
+--cpu Cortex-M3 "sub128bit.o" 
 --strict --scatter "ReverseArray.sct" 
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 
@@ -11,7 +11,7 @@
 ### ADS-LD Output File: 'ReverseArray.axf'
 ### ADS-LD Command File: 'ReverseArray.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile 'ReverseArray.lnp', Handle=0x000057D4
+### Creating CmdFile 'ReverseArray.lnp', Handle=0x00007790
 ### Writing '.lnp' file
 ### ADS-LD Command file 'ReverseArray.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

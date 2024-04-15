@@ -390,6 +390,13 @@
       <Groups>
         <Group>
           <GroupName>Source Group 1</GroupName>
+          <Files>
+            <File>
+              <FileName>LCM.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\LCM.s</FilePath>
+            </File>
+          </Files>
         </Group>
       </Groups>
     </Target>
