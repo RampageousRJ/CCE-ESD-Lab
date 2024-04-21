@@ -1,0 +1,4 @@
+Dependencies for Project 'Dice_Stimulate', Target 'Target 1': (DO NOT MODIFY !)
+F (.\startup_LPC17xx.s)(0x00000000)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC17xx --list "startup_LPC17xx.lst" --xref -o "startup_LPC17xx.o" --depend "startup_LPC17xx.d")
+F (..\system_LPC17xx.c)(0x50877CD6)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC17xx -o "system_lpc17xx.o" --omf_browse "system_lpc17xx.crf" --depend "system_lpc17xx.d")
+F (.\code.c)(0x00000000)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC17xx -o "code.o" --omf_browse "code.crf" --depend "code.d")
